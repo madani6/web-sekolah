@@ -1,18 +1,15 @@
 import React, { Component } from 'react'
 import {
-    Collapse,
+
     Navbar,
-    NavbarToggler,
+
     NavbarBrand,
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
+     } from 'reactstrap';
 import Gambar from '../img/binus.png';
-
+import '../App.css';
 
 
 export default class Header extends Component {
@@ -32,25 +29,25 @@ export default class Header extends Component {
       render() {
         return (
           <div>
-            <Navbar color="white" ligzht expand="md">
+            <Navbar color="light" ligzht expand="md">
             <img src={Gambar} style={{width:70,height:60 }} />
             <br />
-              <NavbarBrand><u>SMK BINA NUSANTARA</u></NavbarBrand>
+              <NavbarBrand className="header">SMK BINA NUSANTARA</NavbarBrand>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink className="NavLink-Header" href="#">Visi & Misi</NavLink>
+                    <NavLink className="NavLink-Header header-navbar" href="#">Visi & Misi</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="NavLink-Header" href="#">Jurusan</NavLink>
+                    <NavLink className="NavLink-Header header-navbar" href="#">Jurusan</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="NavLink-Header" href="#">Berita Kampus</NavLink>
+                    <NavLink className="NavLink-Header header-navbar" href="#">Berita Kampus</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="NavLink-Header" href="#">Fasilitas</NavLink>
+                    <NavLink className="NavLink-Header header-navbar" href="#">Fasilitas</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="NavLink-Header" href="#">Dukungan</NavLink>
+                    <NavLink className="NavLink-Header header-navbar" href="#">Dukungan</NavLink>
                   </NavItem>
                 </Nav>
             </Navbar>
