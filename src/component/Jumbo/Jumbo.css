@@ -1,0 +1,36 @@
+.jumbotron-h1 {
+    width: 443px;
+    height: 66px;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 30px;
+    font-size: 28px;
+    color: #615E5E;
+}
+.jumbotron-p {
+    width: 632px;
+    height: 69px;
+    left: 117px;
+    top: 246px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 20px;
+    color: #000000;
+}
+.jumbotron-button {
+    width: 156px;
+    height: 43px;
+    left: 139px;
+    top: 357px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: linear-gradient(179.59deg, #FFA401 1.26%, #FFA401 98.73%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}

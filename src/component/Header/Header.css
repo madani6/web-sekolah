@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+.header {
+    font-family: Roboto;
+    font-size: 24px;
+    color: black;
+}
+.imgg {
+    width: 70px;
+    height: 70px;
+    left: 20%;
+}
+.header-navbar {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    color: #615E5E;
+}
+.cerdas {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 110px;
+    top: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-style: normal;
+    font-weight: normal;
+    
+    line-height: normal;
+    color: #000000;
+}
+.binus {
+    position: absolute;
+    width: 258px;
+    height: 29px;
+    left: 117px;
+    top: 9px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: normal;
+    color: #000000;
+}

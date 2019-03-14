@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
+import './Header.css'
 import {
-
+    Collapse,
     Navbar,
-
+    NavbarToggler,
     NavbarBrand,
     Nav,
     NavItem,
     NavLink,
-     } from 'reactstrap';
-import Gambar from '../img/binus.png';
-import '../App.css';
-
+    } from 'reactstrap';
+import Gambar from './binus.png'
 
 export default class Header extends Component {
     constructor(props) {
@@ -29,27 +28,33 @@ export default class Header extends Component {
       render() {
         return (
           <div>
-            <Navbar color="light" ligzht expand="md">
+            <Navbar className="header" color="white" light expand="md">
             <img src={Gambar} style={{width:70,height:60 }} />
-            <br />
-              <NavbarBrand className="header">SMK BINA NUSANTARA</NavbarBrand>
+              <NavbarBrand className="binus"><u>SMK BINA NUSANTARA</u></NavbarBrand>
+              <NavbarBrand className="cerdas">Cerdas Santun dan Berbudiluhur</NavbarBrand>
+              <NavbarToggler onClick={this.toggle} />
+              <Collapse isOpen={this.state.isOpen} navbar className="header-navbar">
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink className="NavLink-Header header-navbar" href="#">Visi & Misi</NavLink>
+                    <NavLink>Beranda</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="NavLink-Header header-navbar" href="#">Jurusan</NavLink>
+                    <NavLink>Visi & Misi</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="NavLink-Header header-navbar" href="#">Berita Kampus</NavLink>
+                    <NavLink>Jurusan</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="NavLink-Header header-navbar" href="#">Fasilitas</NavLink>
+                    <NavLink>Berita Kampus</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="NavLink-Header header-navbar" href="#">Dukungan</NavLink>
+                    <NavLink>Fasilitas</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink>Dukungan</NavLink>
                   </NavItem>
                 </Nav>
+              </Collapse>
             </Navbar>
           </div>
         );
